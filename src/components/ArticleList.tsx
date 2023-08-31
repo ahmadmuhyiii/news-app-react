@@ -74,18 +74,3 @@ const ArticleList: React.FC = () => {
 };
 
 export default ArticleList;
-
-
-
-// return (
-//     <div>
-//       <h1>Article List</h1>
-//       {articles.map((article, index) => (
-//         <div key={index}>
-//           <img src={article.urlToImage} alt={article.title} />
-//           <h2><Link to={`/article/${index}`}>{article.title}</Link></h2>
-//           <p>{article.description}</p>
-//         </div>
-//       ))}
-//     </div>
-//   );

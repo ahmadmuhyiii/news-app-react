@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Typography } from 'antd';
-import { Row, Card, Breadcrumb, Button } from 'antd';
+import { Row, Card, Breadcrumb, Button, Spin } from 'antd';
 import axios from 'axios';
 import '../App.css';
 
@@ -37,7 +37,9 @@ const ArticleDetail: React.FC = () => {
   }, [id]);
 
   if (!article) {
-    return <div>Loading...</div>;
+    return <Spin tip="Loading" size="large" >
+        <div className="contentspin" />
+      </Spin>;
   }
 
   
